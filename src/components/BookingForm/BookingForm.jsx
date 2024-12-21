@@ -65,7 +65,7 @@ const BookingForm = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ setFieldValue, values }) => (
+        {({ setFieldValue, setFieldTouched, values, isValid, dirty }) => (
           <Form>
             <div className={css.formContent}>
               <label className={css.formLabel} htmlFor={nameId}>
@@ -106,6 +106,7 @@ const BookingForm = () => {
                   onChange={inputDate => {
                     setFieldValue('date', inputDate);
                   }}
+                  onBlur={() => setFieldTouched('date', true)}
                   dateFormat="dd.MM.yyyy"
                   placeholderText="Booking date*"
                   wrapperClassName={css.datePicker}
@@ -130,7 +131,12 @@ const BookingForm = () => {
               </label>
             </div>
 
-            <button type="submit" className={css.btn} aria-label="Send button">
+            <button
+              type="submit"
+              className={css.btn}
+              aria-label="Send button"
+              disabled={!(isValid && dirty)}
+            >
               Send
             </button>
           </Form>

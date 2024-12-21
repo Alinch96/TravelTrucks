@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Layout from './components/Layout/Layout.jsx';
 
@@ -12,6 +12,10 @@ const CamperReviews = lazy(() =>
   import('./components/CamperReviews/CamperReviews.jsx')
 );
 
+const NotFoundPage = lazy(() =>
+  import('./components/NotFoundPage/NotFoundPage.jsx')
+);
+
 function App() {
   return (
     <>
@@ -23,7 +27,7 @@ function App() {
             <Route path="features" element={<CamperFeatures />} />
             <Route path="reviews" element={<CamperReviews />} />
           </Route>
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
     </>

@@ -1,0 +1,44 @@
+.notFoundSection {
+  padding-top: 48px;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.homeLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button);
+  color: var(--background-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color var(--animation);
+}
+
+.homeLink:hover {
+  background-color: var(--button-hover);
+}
+
+.homeIcon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}

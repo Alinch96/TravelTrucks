@@ -78,7 +78,10 @@
 .btn:hover {
   background-color: var(--button-hover);
 }
-
+.btn:disabled {
+  background-color: rgba(228, 73, 73, 0.5);
+  cursor: not-allowed;
+}
 .errorMessage {
   position: absolute;
   bottom: -12px;
