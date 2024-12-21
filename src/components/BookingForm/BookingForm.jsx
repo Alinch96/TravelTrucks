@@ -4,6 +4,7 @@ import css from './BookingForm.module.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ErrorMessage, Field, Formik, Form } from 'formik';
+import { useId } from 'react';
 
 const validationSchema = yup.object().shape({
   name: yup
@@ -38,7 +39,12 @@ const toastOptions = {
 };
 
 const BookingForm = () => {
-  const handleSubmit = (values, actions) => {
+  const nameId = useId();
+  const emailId = useId();
+  const dateId = useId();
+  const commentId = useId();
+
+  const handleSubmit = (_, actions) => {
     toast.success(
       `Dear customer, thank you for your request! Please check your mailbox for booking confirmation`
     );
@@ -59,14 +65,13 @@ const BookingForm = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ setFieldValue, values, errors }) => (
+        {({ setFieldValue, values }) => (
           <Form>
             <div className={css.formContent}>
-              <label
-                className={values.name && errors.name ? css.fieldWithError : ''}
-              >
+              <label className={css.formLabel} htmlFor={nameId}>
                 <Field
                   className={css.formInput}
+                  id={nameId}
                   type="text"
                   name="name"
                   placeholder="Name*"
@@ -78,9 +83,10 @@ const BookingForm = () => {
                 />
               </label>
 
-              <label>
+              <label className={css.formLabel} htmlFor={emailId}>
                 <Field
                   className={css.formInput}
+                  id={emailId}
                   type="text"
                   name="email"
                   placeholder="Email*"
@@ -92,8 +98,9 @@ const BookingForm = () => {
                 />
               </label>
 
-              <label>
+              <label className={css.formLabel} htmlFor={dateId}>
                 <DatePicker
+                  id={dateId}
                   selected={values.date}
                   shouldCloseOnSelect={true}
                   onChange={inputDate => {
@@ -111,8 +118,9 @@ const BookingForm = () => {
                 />
               </label>
 
-              <label>
+              <label className={css.formLabel} htmlFor={commentId}>
                 <Field
+                  id={commentId}
                   as="textarea"
                   className={css.formTextArea}
                   name="comment"

@@ -13,6 +13,9 @@
   flex-direction: column;
   gap: 100px;
   padding: 44px 52px;
+  background: var(--inputs);
+  width: 631px;
+  border-radius: 10px;
 }
 
 .facilitiesListWrapper,
