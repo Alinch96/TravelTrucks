@@ -101,6 +101,7 @@ const BookingForm = () => {
                   }}
                   dateFormat="dd.MM.yyyy"
                   placeholderText="Booking date*"
+                  wrapperClassName={css.datePicker}
                   className={css.formInput}
                 />
                 <ErrorMessage

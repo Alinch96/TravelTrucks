@@ -34,9 +34,14 @@
   background: var(--inputs);
   font-family: inherit;
   border: none;
+  width: 100%;
 }
 
-.camperFormInput::placeholder,
+.datePicker {
+  width: 100%;
+}
+
+.formInput::placeholder,
 .formTextArea::placeholder {
   color: var(--gray);
 }
@@ -52,13 +57,6 @@
   outline: none;
   resize: none;
   font-family: inherit;
-}
-
-.calendarInput {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
 }
 
 .btn {
