@@ -45,8 +45,6 @@ const BookingForm = () => {
     actions.resetForm();
   };
 
-  console.log(css.toast);
-
   return (
     <div className={css.formWrapper}>
       <div className={css.formHeader}>
