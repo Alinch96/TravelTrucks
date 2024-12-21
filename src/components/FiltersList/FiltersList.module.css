@@ -1,0 +1,20 @@
+.filterTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color-main);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray-light);
+  margin-bottom: 24px;
+}
+
+.filterList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.filterListItem {
+  width: 112px;
+}

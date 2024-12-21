@@ -1,0 +1,28 @@
+.container {
+  font-weight: 500;
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: var(--text-color-main);
+}
+
+.title {
+  font-size: 48px;
+}
+
+.textWrapper {
+  text-align: center;
+  gap: 72px;
+}
+
+.text {
+  font-size: 18px;
+}

@@ -1,0 +1,18 @@
+.facilitiesList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.facilitiesListItem {
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background-color: var(--border);
+  font-weight: 500;
+  mix-blend-mode: multiply;
+  transition: background-color var(--animation);
+}

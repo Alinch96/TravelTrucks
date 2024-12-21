@@ -1,0 +1,33 @@
+.featuresSection {
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 44px 52px;
+}
+
+.facilitiesListWrapper,
+.detailsListWrapper {
+  display: flex;
+  width: 527px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}

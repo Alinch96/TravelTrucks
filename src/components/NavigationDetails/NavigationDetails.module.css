@@ -1,0 +1,33 @@
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid var(--gray-light);
+  margin-top: 60px;
+}
+
+.navLink {
+  position: relative;
+  display: block;
+  color: var(--text-color-main);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 24px;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 85px;
+  bottom: -2.5px;
+  left: 0;
+  height: 5px;
+  background-color: var(--button);
+  opacity: 0;
+  transition: width var(--animation), opacity var(--animation);
+}
+
+.navLink.isActive::after {
+  opacity: 1;
+}

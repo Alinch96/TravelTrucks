@@ -1,0 +1,46 @@
+.favTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color-main);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray-light);
+  margin-bottom: 24px;
+  margin-top: 72px;
+}
+
+.favList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.favListItem {
+  width: 360px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 32px;
+  background-color: var(--border);
+  transition: background-color var(--animation);
+}
+.btnRemoveFav {
+  padding: 16px 24px 16px 12px;
+}
+
+.btnRemoveFav:hover {
+  color: var(--button);
+}
+
+.favLink {
+  padding-block: 16px;
+  color: var(--text-color-main);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.favLink:hover {
+  color: var(--button);
+}

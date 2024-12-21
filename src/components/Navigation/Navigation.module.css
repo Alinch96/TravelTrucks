@@ -1,0 +1,22 @@
+.nav {
+  padding: 24px 0px;
+  display: flex;
+  align-items: center;
+  gap: 450px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  display: block;
+  color: var(--text-color-main);
+  font-weight: 500;
+}
+
+.isActive {
+  color: var(--button-hover);
+}

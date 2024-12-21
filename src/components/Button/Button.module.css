@@ -1,0 +1,15 @@
+.btn {
+  width: 173px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  border-radius: 200px;
+  color: var(--background-color);
+  font-weight: 500;
+  background-color: var(--button);
+  transition: background-color var(--animation);
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
