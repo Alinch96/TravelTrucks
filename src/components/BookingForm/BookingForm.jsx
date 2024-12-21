@@ -110,6 +110,7 @@ const BookingForm = () => {
                   placeholderText="Booking date*"
                   wrapperClassName={css.datePicker}
                   className={css.formInput}
+                  minDate={new Date()}
                 />
                 <ErrorMessage
                   name="date"
